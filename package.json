@@ -1,6 +1,6 @@
 {
   "name": "ms-eventjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library to manage events",
   "main": "scripts/app.js",
   "scripts": {
