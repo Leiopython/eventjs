@@ -37,3 +37,6 @@ UnSubscribe event:
 ``` js
 MS.eventbus.UnSubscribe('eventName', Namespace.someFunction);
 ```
+
+### Examples
+You can also checkout sample code in [Examples](Examples) folder.
