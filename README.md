@@ -20,9 +20,7 @@ MS.eventbus.Create('eventName');
 
 Subscribe event: 
 ``` js
-MS.eventbus.Subscribe('eventName',function(){
-  console.log('event handler called');
-});
+MS.eventbus.Subscribe('eventName', Namespace.someFunction);
 ```
 
 Publish event: 
@@ -33,4 +31,9 @@ MS.eventbus.Publish('eventName');
 // excecute all handlers in async 
 MS.eventbus.Publish('eventName', true);
 
+```
+
+UnSubscribe event: 
+``` js
+MS.eventbus.UnSubscribe('eventName', Namespace.someFunction);
 ```

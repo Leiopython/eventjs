@@ -1,6 +1,6 @@
 {
   "name": "ms-eventjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library to manage events",
   "main": "scripts/app.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/manojshevate/eventjs.git"
   },
   "keywords": [
-    "event"
+    "event", "eventjs", "MS", "ms-eventjs"
   ],
   "author": "Manoj Shevate <manoj.shevate@gmail.com>",
   "license": "MIT",

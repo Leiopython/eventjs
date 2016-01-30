@@ -28,16 +28,27 @@
 						try {
 							_events[name][i]();
 						} catch (ex) {
-							console.log(ex);
 							// suppress
+							console.log(ex);
 						}
 					}
 				};
 			}
 		};
 
-		_self.UnSubscribe = function(name) {
-			// TODO:
+		_self.UnSubscribe = function(name, handler) {
+			if (_events[name]) {
+				var handlers = _events[name];
+				var index = handlers.indexOf(handler);
+				if (index != -1) {
+					handlers.splice(index, 1);
+					_events[name] = handlers;
+				} else {
+					console.log("Handler not found!")
+				}
+			} else {
+				console.log("Event not found!");
+			}
 		};
 
 		// TODO: for development purpose only
@@ -48,6 +59,8 @@
 	};
 
 
-	window.MS = {eventbus: new Eventbus()};
+	window.MS = {
+		eventbus: new Eventbus()
+	};
 
 })();
