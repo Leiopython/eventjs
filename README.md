@@ -6,24 +6,24 @@ JS library to create custom events
 ### Node.js
 This package is published through npm under the name ```ms-eventjs``` 
 ``` bash
-  $ [sudo] npm install ms-eventjs
+npm install ms-eventjs
 ```
 Once installed, simply add ```scripts/app.js``` file into your html file.
 
 ## Usage
 
 ### Sample code 
-Create event: 
+#####Create event: 
 ``` js
 MS.eventbus.Create('eventName');
 ```
 
-Subscribe event: 
+#####Subscribe event: 
 ``` js
 MS.eventbus.Subscribe('eventName', Namespace.someFunction);
 ```
 
-Publish event: 
+#####Publish event: 
 ``` js
 // excecute all handlers in sync 
 MS.eventbus.Publish('eventName');
@@ -33,7 +33,7 @@ MS.eventbus.Publish('eventName', true);
 
 ```
 
-UnSubscribe event: 
+#####UnSubscribe event: 
 ``` js
 MS.eventbus.UnSubscribe('eventName', Namespace.someFunction);
 ```
