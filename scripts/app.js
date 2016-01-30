@@ -7,13 +7,19 @@
 		var _events = {};
 
 		_self.Create = function(name) {
-			_events[name] = _events[name] || [];
+			if (_events[name]) {
+				console.log('Event already exists!')
+			} else {
+				_events[name] = [];
+			}
 		};
 
 		_self.Subscribe = function(name, handler) {
 			if (_events[name]) {
 				_events[name] = _events[name] || [];
 				_events[name].push(handler);
+			} else {
+				console.log("Event doesn't exists");
 			}
 		};
 
@@ -33,6 +39,8 @@
 						}
 					}
 				};
+			} else {
+				console.log("Event doesn't exists");
 			}
 		};
 
@@ -43,11 +51,13 @@
 				if (index != -1) {
 					handlers.splice(index, 1);
 					_events[name] = handlers;
+					console.log("Handler Removed!");
+
 				} else {
 					console.log("Handler not found!")
 				}
 			} else {
-				console.log("Event not found!");
+				console.log("Event doesn't exists");
 			}
 		};
 
