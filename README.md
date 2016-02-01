@@ -8,7 +8,7 @@ This package is published through npm under the name ```ms-eventjs```
 ``` bash
 npm install ms-eventjs
 ```
-Once installed, simply add ```scripts/app.js``` file into your html file.
+Once installed, simply add ```dist/app.js``` file into your html file.
 
 ## Usage
 
