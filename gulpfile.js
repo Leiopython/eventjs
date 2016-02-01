@@ -1,8 +1,22 @@
 var gulp = require('gulp'),
-		uglify = require('gulp-uglify');
+	gUglify = require('gulp-uglify'),
+	gConcat = require('gulp-concat'),
+	gSourcemaps = require('gulp-sourcemaps');
+
+
+var DEST = 'dist';
+
+var del = require('del');
 
 gulp.task('build:js', function() {
 	gulp.src('scripts/*.js')
-		.pipe(uglify('app.min.js'))
-		.pipe(gulp.dest('dist'))
+		.pipe(gSourcemaps.init())
+		.pipe(gConcat('eventjs.min.js'))
+		.pipe(gUglify())
+		.pipe(gSourcemaps.write('.'))
+		.pipe(gulp.dest(DEST))
+});
+
+gulp.task('clean', function() {
+	return del(DEST);
 });
