@@ -20,3 +20,5 @@ gulp.task('build:js', function() {
 gulp.task('clean', function() {
 	return del(DEST);
 });
+
+gulp.task('build',['build:js']);
