@@ -1,5 +1,5 @@
 # eventjs
-JS library to create custom events
+eventjs will help you to manage you custom javascript events.
 
 ## Setup
 
