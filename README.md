@@ -14,27 +14,27 @@ Once installed, simply add ```dist/eventjs.min.js``` file into your html file.
 
 #####Create event: 
 ``` js
-MS.eventbus.Create('eventName');
+$event.eventbus.Create('eventName');
 ```
 
 #####Subscribe event: 
 ``` js
-MS.eventbus.Subscribe('eventName', Namespace.someFunction);
+$event.eventbus.Subscribe('eventName', Namespace.someFunction);
 ```
 
 #####Publish event: 
 ``` js
 // excecute all handlers in sync 
-MS.eventbus.Publish('eventName');
+$event.eventbus.Publish('eventName');
 
 // excecute all handlers in async 
-MS.eventbus.Publish('eventName', true);
+$event.eventbus.Publish('eventName', true);
 
 ```
 
 #####UnSubscribe event: 
 ``` js
-MS.eventbus.UnSubscribe('eventName', Namespace.someFunction);
+$event.eventbus.UnSubscribe('eventName', Namespace.someFunction);
 ```
 
 ## Examples
