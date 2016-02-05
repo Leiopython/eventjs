@@ -8,7 +8,7 @@
 
 		_self.Create = function(name) {
 			if (_events[name]) {
-				console.log('Event already exists!')
+				console.log('Event already exists!');
 			} else {
 				_events[name] = [];
 			}
@@ -38,7 +38,7 @@
 							console.log(ex);
 						}
 					}
-				};
+				}
 			} else {
 				console.log("Event doesn't exists");
 			}
@@ -54,7 +54,7 @@
 					console.log("Handler Removed!");
 
 				} else {
-					console.log("Handler not found!")
+					console.log("Handler not found!");
 				}
 			} else {
 				console.log("Event doesn't exists");
@@ -69,7 +69,7 @@
 	};
 
 
-	window.MS = {
+	window.$event = {
 		eventbus: new Eventbus()
 	};
 

@@ -8,29 +8,29 @@ var logger = {
 };
 
 //Create Event
-MS.eventbus.Create('test');
+$event.eventbus.Create('test');
 
 // Subscribe Event
-MS.eventbus.Subscribe('test', logger.log);
+$event.eventbus.Subscribe('test', logger.log);
 
-MS.eventbus.Subscribe('test', logger.log1);
+$event.eventbus.Subscribe('test', logger.log1);
 
 // List eventbus
-MS.eventbus.List();
+$event.eventbus.List();
 
 // Publish Event
-MS.eventbus.Publish('test');
+$event.eventbus.Publish('test');
 
 // Unsubscribe Event
-MS.eventbus.UnSubscribe('test', logger.log);
+$event.eventbus.UnSubscribe('test', logger.log);
 // List eventbus
-MS.eventbus.List();
+$event.eventbus.List();
 // Publish Event
-MS.eventbus.Publish('test');
+$event.eventbus.Publish('test');
 
 // Unsubscribe Event
-MS.eventbus.UnSubscribe('test', logger.log1);
+$event.eventbus.UnSubscribe('test', logger.log1);
 // List eventbus
-MS.eventbus.List();
+$event.eventbus.List();
 // Publish Event
-MS.eventbus.Publish('test');
+$event.eventbus.Publish('test');
