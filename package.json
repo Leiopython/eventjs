@@ -1,6 +1,6 @@
 {
   "name": "ms-eventjs",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Library to manage events",
   "main": "scripts/app.js",
   "scripts": {
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manojshevate/eventjs.git"
+    "url": "git+https://github.com/Leiopython/eventjs.git"
   },
   "keywords": [
     "event", "eventjs", "MS", "ms-eventjs"
   ],
-  "author": "Manoj Shevate <manoj.shevate@gmail.com>",
+  "author": "Leiopython",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/manojshevate/eventjs/issues"
+    "url": "https://github.com/Leiopython/eventjs/issues"
   },
-  "homepage": "https://github.com/manojshevate/eventjs#readme",
+  "homepage": "https://github.com/Leiopython/eventjs#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-uglify": "^1.5.1",
