@@ -39,3 +39,7 @@ $event.eventbus.UnSubscribe('eventName', Namespace.someFunction);
 
 ## Examples
 You can also checkout sample code in [Examples](Examples) folder.
+
+##TODO
+1.  Unit testing
+2.  travis-ci integration
