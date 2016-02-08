@@ -1,5 +1,7 @@
 (function(undefined) {
 
+	window.$event = window.$event || {};
+
 	var Eventbus = function() {
 
 		var _self = this;
@@ -69,8 +71,6 @@
 	};
 
 
-	window.$event = {
-		eventbus: new Eventbus()
-	};
+	window.$event.eventbus = new Eventbus();
 
 })();
