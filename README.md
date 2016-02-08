@@ -44,3 +44,4 @@ You can also checkout sample code in [Examples](Examples) folder.
 1.  Unit testing
     http://jasmine.github.io/2.4/introduction.html
 2.  travis-ci integration
+3.  Integrate document.events
