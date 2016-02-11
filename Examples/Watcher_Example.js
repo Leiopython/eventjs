@@ -11,13 +11,15 @@ $event.watch(obj, function(callbacks){
 });
 
 // Handler for Array
-$event.watch(obj, function(callbacks){
+$event.watch(arr, function(callbacks){
 	console.log('Object watcher handler -> ', callbacks);
 });
 
 
 // Update object
 obj.newProp = 'Test';
+// This will trigger the handler on the give object
 
 // Update array
 arr.push('Test');
+// This will trigger the handler on the give object
