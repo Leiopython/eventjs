@@ -45,3 +45,14 @@ You can also checkout sample code in [Examples](Examples) folder.
     http://jasmine.github.io/2.4/introduction.html
 2.  travis-ci integration
 3.  Integrate document.events
+
+
+## Watcher
+you can subscribe to the changes of any object. 
+E.g.
+``` js
+var obj = {fName: 'Manoj', lName: 'Shevate'};
+$event.watch(obj, function(c){
+	// This function will be called whenever any changes made to the object "obj"
+});
+```
