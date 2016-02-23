@@ -2,7 +2,7 @@
 **READY/IN DEVELOPMENT/HOLD**
 
 ## Testing status
-YES | NO
+Done | Pending
 
 ## Description
 A few sentences describing the overall goals of the pull request's commits.
