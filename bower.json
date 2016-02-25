@@ -1,0 +1,24 @@
+{
+  "name": "ms-eventjs",
+  "description": "Library to manage events",
+  "main": "scripts/app.js",
+  "authors": [
+    "Leiopython"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "event",
+    "eventjs",
+    "MS",
+    "ms-eventjs"
+  ],
+  "homepage": "https://github.com/Leiopython/eventjs",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
