@@ -3,11 +3,18 @@ eventjs will help you to manage you custom javascript events.
 
 ## Setup
 
-##### Node.js
+##### npm
 This package is published through npm under the name ```ms-eventjs``` 
 ``` bash
 npm install ms-eventjs
 ```
+
+##### bower
+This package is published through bower under the name ```ms-eventjs``` 
+``` bash
+bower install ms-eventjs
+```
+
 Once installed, simply add ```dist/eventjs.min.js``` file into your html file.
 
 ## Usage
